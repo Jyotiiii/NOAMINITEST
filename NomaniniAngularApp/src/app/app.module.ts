@@ -13,10 +13,12 @@ import { CommonModule } from '@angular/common';
 import { RegisterSchoolComponent } from './register-school/register-school.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterFunderComponent } from './register-funder/register-funder.component';
+import { CalculateOrderPaymentComponent } from './calculate-order-payment/calculate-order-payment.component';
+import { ListorderComponent } from './listorder/listorder.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ,ReactiveFormsModule,CommonModule,HttpClientModule,RouterModule.forRoot(appRoutes)],
-  declarations: [ AppComponent, RegisterSchoolComponent, LoginComponent, RegisterFunderComponent],
+  declarations: [ AppComponent, RegisterSchoolComponent, LoginComponent, RegisterFunderComponent, CalculateOrderPaymentComponent, ListorderComponent],
   providers: [],
   bootstrap:    [ AppComponent ]
 })

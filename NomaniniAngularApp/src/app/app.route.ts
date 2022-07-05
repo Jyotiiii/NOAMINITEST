@@ -1,4 +1,6 @@
 import { Routes } from '@angular/router';
+import { CalculateOrderPaymentComponent } from './calculate-order-payment/calculate-order-payment.component';
+import { ListorderComponent } from './listorder/listorder.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterFunderComponent } from './register-funder/register-funder.component';
 import { RegisterSchoolComponent } from './register-school/register-school.component';
@@ -11,6 +13,8 @@ export const appRoutes: Routes = [
     { path: 'registerschool', component: RegisterSchoolComponent },
     { path: 'login', component: LoginComponent },
     { path: 'registerfunder', component: RegisterFunderComponent },
+    { path: 'CalculateOrderPayment', component: CalculateOrderPaymentComponent},
+    { path: 'listorder', component: ListorderComponent},
   
     
 

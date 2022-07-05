@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<div class="descriptionModal">
+  <form [formGroup]="listorder" id="listorder">
+
+    <!-- <p style="background-image: url('./../assets/Standardbank.jpeg');"> -->
+    <div class="container">
+
+      <div class="center">
+
+        <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+          <div class="logoset"><img src="./../assets/Standardbank.png" alt="logoEmbajador" width="100" height="100">
+          </div>
+
+          <div class="wrapper wrapper--w790">
+            <div>
+              <div class="card-heading">
+                <h2 class="title"style="position: absolute;
+                top: 50px;left:550px;
+                "> View Order List</h2>
+              </div>
+              &nbsp;
+            <div class="card-body">
+              <div>
+                <table class="styled-table">
+                  
+                <thead class="name">
+                    
+                    <tr>
+                        
+                        <th scope="col" >Date</th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <th scope="col">Gross_Amount <span class="col-required"></span></th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <th scope="col">Discount<span class="col-required"></span></th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <th scope="col">Discounted_Amount<span class="col-required"></span></th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <th scope="col">VAT<span class="col-required"></span></th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <th scope="col">Amount_Payable<span class="col-required"></span></th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <th scope="col">Status<span class="col-required"></span></th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                    </tr>
+                </thead>
+                <tbody>
+                 <tr *ngFor="let token of ApproveRejectList; let i = index">
+                 <td>{{token.Date}}</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 <td>{{token.Gross_Amount}}</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 <td>{{token.Discount}}</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 <td>{{token.Discounted_Amount}}</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 <td>{{token.VAT}}</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 <td>{{token.Amount_Payable}}</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 <td>
+                  <label>
+                  <!-- <div class="screenreader">Select Row</div> -->
+                  <button class="btn btn--radius-2 btn--red"   routerLink='/' type="button">Approve</button>
+                  <!-- <button class="ev-button ev-button--secondary" routerLink='/'  type="button" >Reject</button>-->
+                </label></td>  
+                </tr>
+                 </tbody>
+            </table>
+             <!-- <div class="form-row m-b-55">
+                    <div class="name"><div class=forgetset><a href="forgetPasswordController"style="color:#555;position:absolute;left: 408px;bottom:640px;" routerLink="/login">Back</a></div></div></div> 
+                   -->
+                 
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+    </div>
+  </form>
+</div>
+
+</html>
+<!-- end document-->
