@@ -654,13 +654,13 @@
     margin:30px auto 0;
     padding:6px;  
     position:absolute;
-    width:450px;
+    width:480px;
 	height:-600px;
-    bottom: 500px;
-    left: 20px;
+    bottom: 350px;
+    left: 18px;
 	/* nav-down: ; */
 	float: right;
-    margin-left: 400px;
+    margin-left: 390px;
     margin-top: 40px;
 }
   

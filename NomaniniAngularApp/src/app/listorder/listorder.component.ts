@@ -11,10 +11,10 @@ export class ListorderComponent implements OnInit {
   ApproveRejectList=[{
     id:1,
     Date:'2022-7-5',
-    Gross_Amount:'200',
-    Discount:'10%',
+    Gross_Amount:'133290',
+    Discount:'0.055',
     Discounted_Amount:'3020',
-    VAT:'600',
+    VAT:'1.16',
     Amount_Payable:'700'
   },
   {

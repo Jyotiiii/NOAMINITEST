@@ -15,10 +15,11 @@ import { LoginComponent } from './login/login.component';
 import { RegisterFunderComponent } from './register-funder/register-funder.component';
 import { CalculateOrderPaymentComponent } from './calculate-order-payment/calculate-order-payment.component';
 import { ListorderComponent } from './listorder/listorder.component';
+import { MasterDataComponent } from './master-data/master-data.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ,ReactiveFormsModule,CommonModule,HttpClientModule,RouterModule.forRoot(appRoutes)],
-  declarations: [ AppComponent, RegisterSchoolComponent, LoginComponent, RegisterFunderComponent, CalculateOrderPaymentComponent, ListorderComponent],
+  declarations: [ AppComponent, RegisterSchoolComponent, LoginComponent, RegisterFunderComponent, CalculateOrderPaymentComponent, ListorderComponent, MasterDataComponent],
   providers: [],
   bootstrap:    [ AppComponent ]
 })

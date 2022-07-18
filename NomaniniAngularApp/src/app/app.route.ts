@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { CalculateOrderPaymentComponent } from './calculate-order-payment/calculate-order-payment.component';
 import { ListorderComponent } from './listorder/listorder.component';
 import { LoginComponent } from './login/login.component';
+import { MasterDataComponent } from './master-data/master-data.component';
 import { RegisterFunderComponent } from './register-funder/register-funder.component';
 import { RegisterSchoolComponent } from './register-school/register-school.component';
 // import { ResetPasswordComponent } from './reset-password/reset-password.component';
@@ -15,6 +16,7 @@ export const appRoutes: Routes = [
     { path: 'registerfunder', component: RegisterFunderComponent },
     { path: 'CalculateOrderPayment', component: CalculateOrderPaymentComponent},
     { path: 'listorder', component: ListorderComponent},
+    { path: 'MasterData', component: MasterDataComponent},
   
     
 

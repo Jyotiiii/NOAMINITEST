@@ -27,7 +27,7 @@
                   &nbsp;
                   <div class="value">
                     <div class="input-group">
-                      <input class="input--style-5" type="text" name="Username" formControlName="Username">
+                      <input class="input--style-5" type="text" name="userId" formControlName="userId">
                     </div>
                   </div>
                 </div>
@@ -36,8 +36,18 @@
                   &nbsp;
                   <div class="value">
                     <div class="input-group">
-                      <input class="input--style-5" type="text" name="Password"
-                        formControlName="Password">
+                      <input class="input--style-5" type="text" name="password"
+                        formControlName="password">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row m-b-55">
+                  <div class="name">Subscription Key</div>
+                  &nbsp;
+                  <div class="value">
+                    <div class="input-group">
+                      <input class="input--style-5" type="text" name="subscriptionKey"
+                        formControlName="subscriptionKey">
                     </div>
                   </div>
                 </div>
@@ -47,9 +57,41 @@
                   <div class="name"><div class=forgetset><a style="color:#555;position:absolute;right: 0%;">Forget password ?</a></div></div></div>  -->
                  <div>
                   <div class="center" style="position: absolute;left:30px ">
-                    <button class="btn btn--radius-2 btn--red" type="submit">Login</button>
+                    <button class="btn btn--radius-2 btn--red" type="submit" (click)="submit()">Login</button>
                   </div>
                 </div>
+                <div class="holder" *ngIf="showhide">     
+                  <div id="popup" class="popup">  
+                        <div class="content" *ngFor="let a of showdata">
+                          login Successfully !!<br>
+                          persona: {{a.persona}}<br>
+                          <!-- <h6>token:{{a.token}}</h6><br> -->
+                       </div>
+                  </div>
+                </div>
+
+                <div class="holder" *ngIf="errormsg">     
+                  <div id="popup" class="popup">            
+                      <div class="content">Invalid User !!!</div>
+                  </div>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+                
               </div>
             </div>
           </div>

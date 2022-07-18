@@ -2,7 +2,7 @@
 <html lang="en">
 
 <div class="descriptionModal"style="padding-left:-300px;background-color:white;">
-  <form [formGroup]="CalculateOrderPayment" id="CalculateOrderPayment">
+  <form [formGroup]="MasterData" id="MasterData">
 
     <!-- <p style="background-image: url('./../assets/Standardbank.jpeg');"> -->
     <div class="container">
@@ -17,59 +17,65 @@
             <div>
               <div class="card-heading">
                 <h2 class="title"style="position: absolute;
-                top: 20px;
-                "> Calculate Order Payment</h2>
+                top: 20px;left:590px;
+                "> Master Data </h2>
               </div>
               &nbsp;
-              <br><br><br>
+              <br><br>
               <div class="card-body">
                 <div class="form-row m-b-55">
-                  <div class="name"> Supplier Name</div>
+                  <div class="name"> Price Per Unit</div>
                   &nbsp;
                   <div class="value">
                     <div class="input-group">
-                      <input class="input--style-5" type="text" name="supplierName" formControlName="supplierName">
+                      <input class="input--style-5" type="text" name="pricePerUnit" formControlName="pricePerUnit">
                     </div>
                   </div>
                 </div>
-                <br><br>
+            
                 <div class="form-row m-b-55">
-                  <div class="name">Order Number</div>
+                  <div class="name">VAT Percentage</div>
                   &nbsp;
                   <div class="value">
                     <div class="input-group">
-                      <input class="input--style-5" type="text" name="numberOfOrder"
-                        formControlName="numberOfOrder">
+                      <input class="input--style-5" type="text" name="vatPercentage"
+                        formControlName="vatPercentage">
                     </div>
                   </div>
                 </div>
+                
+                <div class="form-row m-b-55">
+                    <div class="name"style="width:unset">Discount Percentage</div>
+                    &nbsp;
+                    <div class="value">
+                      <div class="input-group">
+                        <input class="input--style-5" type="text" name="discountPercentage"
+                          formControlName="discountPercentage">
+                      </div>
+                    </div>
+                  </div>
                 <div class="form-row m-b-55">
                     <h2 class="name" style="position: absolute;
-                    top: 400px;
+                    top: 390px;
                     "> Supplier Type</h2>
                </div>
-               <select name="supplierType" id="supplierType" style="background:transparent;width:200px;border-color: black;" name="supplierType" formControlName="supplierType">
+               <select name="supplierType" id="supplierType" style="position:absolute;top:410px;background:transparent;width:200px;border-color: black;" name="supplierType" formControlName="supplierType">
                     <option value="Nomanini">Nomanini</option>
                     <option value="Airtel">Airtel</option>
                     <option value="Mno">Mno</option>
                   </select>
                   <div class="form-row m-b-55">
-                    <div class="name"><div class=forgetset><a href="forgetPasswordController"style="color:#555;position:absolute;left: 410px;bottom:640px;" routerLink="/login">Back</a></div></div></div> 
-                  <div class="center" style="position:absolute;top:540px">
+                    <div class="name"><div class=forgetset><a href="forgetPasswordController"style="color:#555;position:absolute;left:410px;bottom:630px;" routerLink="/login">Back</a></div></div></div> 
+                  <div class="center" style="position:absolute;top:500px">
                     <button class="btn btn--radius-2 btn--red" type="submit"  (click)="submit()">submit</button>
                   </div>
                   <div class="holder" *ngIf="showhide">     
                     <div id="popup" class="popup">  
                              
                         <div class="content" *ngFor="let a of showdata">
-                          Amount Payable: {{a.AmountPayable}}<br>
-                          Date:{{a.Date}}<br>
-                          Discount: {{a.Discount}}<br>
-                          DiscountedAmount: {{a.DiscountedAmount}}<br>
-                          GrossAmount: {{a.GrossAmount}}<br>
-                          VAT: {{a.VAT}}<br>
-                          orderId: {{a.orderId}}<br>
-                          transactionId: <br><h6>{{a.transactionId}}</h6> <br>
+                          Ok: {{a.ok}}<br>
+                          Id:{{a.id}}<br>
+                          rev: {{a.rev}}<br>
                          </div>
                     </div>
                   </div>

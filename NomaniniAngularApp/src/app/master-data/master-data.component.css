@@ -3,8 +3,8 @@
 	background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("/assets/namaniniback.jpeg");
 
      background-size: cover; 
-     width: 450px;
-    height: 640px; 
+     width: 500px;
+    height: 660px; 
     border: 2px solid;
     color: rgb(21, 151, 202);
 	/* opacity: 0.4; */
@@ -19,12 +19,13 @@
 	 /* top: 15px;; 
 	 right: 390px; */
 	 top: -57px;
-	 right: -135px;
+	 right: -100px;
 
 	float:right;
 	/* opacity: 0.4; */
 	
 }
+
 .imagesidecaptiondescription {
     color: black;
     opacity : 1;
@@ -60,34 +61,6 @@
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
   }
-  .logoset1{
-    /* background-image: url("/assets/school.jpeg"); */
-	/* background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("/assets/school.jpeg");
-
-     background-size: cover;  */
-	 position: relative; 
-	 /* top: 15px;; 
-	 right: 390px; */
-	 top: -30px;
-	 right: -45px;
-
-	float:right;
-	/* opacity: 0.4; */
-	
-}
-.forgetset{
-       width: 5px;
-	   right: 0px;
-       float:right;
-		/* opacity: 0.4; */
-}
-.rememberset{
-	width: 5px;
-	left: -100px;
-	float:left;
-	top: 255px;
-
-}
   
   .row .col-2:last-child .input-group-desc {
 	margin-bottom: 0;
@@ -447,21 +420,21 @@
   /* ==========================================================================
 	 #BUTTON
 	 ========================================================================== */
-  .btn {
-	display: inline-block;
-	line-height: 50px;
-	padding: 0 50px;
-	/* -webkit-transition: all 0.4s ease; 
-	-o-transition: all 0.4s ease;
-	-moz-transition: all 0.4s ease;
-	transition: all 0.4s ease;*/
-	cursor: pointer;
-	font-size: 15px;
-	text-transform: uppercase;
-	font-weight: 700;
-	color: #fff;
-	font-family: inherit;
-  }
+	 .btn {
+		display: inline-block;
+		line-height: 50px;
+		padding: 0 50px;
+		/* -webkit-transition: all 0.4s ease; 
+		-o-transition: all 0.4s ease;
+		-moz-transition: all 0.4s ease;
+		transition: all 0.4s ease;*/
+		cursor: pointer;
+		font-size: 15px;
+		text-transform: uppercase;
+		font-weight: 700;
+		color: #fff;
+		font-family: inherit;
+	  }
   
   .btn--radius {
 	-webkit-border-radius: 3px;
@@ -577,7 +550,7 @@
 	box-shadow: none;
 	font-size: 14px;
 	 font-family: inherit;
-    width: 600%; 
+    /* width: 900%;  */
 	background: transparent;
   border: none;
   border-bottom: 1.5px solid #000000;
@@ -586,6 +559,12 @@
   border-radius: 0;
 	
   }
+  .forgetset{
+	width: 5px;
+	left: 100px;
+	float:left;
+	 /* opacity: 0.4; */
+}
 
  
   
@@ -668,6 +647,22 @@
 	color: blue;
 	
   } */
+
+  .popup{
+    border-radius: 7px;
+    background:skyblue;
+    margin:30px auto 0;
+    padding:6px;  
+    position:absolute;
+    width:480px;
+	height:-600px;
+    bottom: 500px;
+    left: 18px;
+	/* nav-down: ; */
+	float: right;
+    margin-left: 390px;
+    margin-top: 40px;
+}
   
   .input-group-desc {
 	position: relative;
@@ -806,7 +801,7 @@
 	text-transform: unset;
 	font-weight: 700;
 	text-align: center;
-	color: rgb(21, 151, 202);
+	color: white;
   }
   
   /* ==========================================================================
@@ -855,20 +850,9 @@
 	display: flex;
 	justify-content: center;
   }
-  .popup{
-    border-radius: 7px;
+  .content{
     background:skyblue;
-    margin:30px auto 0;
-    padding:6px;  
-    position:absolute;
-    width:420px;
-	height:-600px;
-    bottom: 400px;
-    left: -500px;
-	/* nav-down: ; */
-	float: right;
-    margin-left: 390px;
-    margin-top: 40px;
+    padding: 28px 26px 33px 25px;
 }
   
   
